@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 
 /**
@@ -24,6 +25,16 @@ class place : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
             view.findViewById<TextView>(R.id.textView2).text=arguments!!.getString("Ciudad")!!
+        if( arguments!!.getString("Ciudad").equals("España")){
+            view.findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.esp)
 
-}
+        }
+        if( arguments!!.getString("Ciudad").equals("Medellin")){
+            view.findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.madellin)
+
+        }
+
+
+
+    }
 }
