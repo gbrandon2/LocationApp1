@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_car"
+        android:layout_width="209dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="140dp"
+        android:text="Cartagena"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_med"
+        android:layout_width="209dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="37dp"
+        android:text="Medellín"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_car" />
+
+    <Button
+        android:id="@+id/btn_esp"
+        android:layout_width="209dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="37dp"
+        android:text="España"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_med" />
+
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
